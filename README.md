@@ -22,11 +22,11 @@ Template code is provided in the `finding_donors.ipynb` notebook file. You will 
 This project contains three files:
 
 
-finding_donors.ipynb: This is the main file where all works description is given.
+*finding_donors.ipynb: This is the main file where all works description is given.
 
-census.csv: The project dataset. This dataset is loaded in the notebook.
+*census.csv: The project dataset. This dataset is loaded in the notebook.
 
-visuals.py: A Python file containing visualization code that is run behind-the-scenes. Do not modify
+*visuals.py: A Python file containing visualization code that is run behind-the-scenes. Do not modify
 
 ### Run
 
