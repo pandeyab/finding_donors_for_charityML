@@ -23,7 +23,7 @@ def distribution(data, transformed = False):
     """
     
     # Create figure
-    fig = pl.figure(figsize = (11,5));
+    fig = pl.figure(figsize = (18, 10));
 
     # Skewed feature plotting
     for i, feature in enumerate(['capital-gain','capital-loss']):
@@ -39,12 +39,12 @@ def distribution(data, transformed = False):
     # Plot aesthetics
     if transformed:
         fig.suptitle("Log-transformed Distributions of Continuous Census Data Features", \
-            fontsize = 16, y = 1.03)
+            fontsize = 16, y = 0.99)
     else:
         fig.suptitle("Skewed Distributions of Continuous Census Data Features", \
-            fontsize = 16, y = 1.03)
+            fontsize = 16, y = 0.99)
 
-    fig.tight_layout()
+    #fig.tight_layout()
     fig.show()
 
 
@@ -60,7 +60,7 @@ def evaluate(results, accuracy, f1):
     """
   
     # Create figure
-    fig, ax = pl.subplots(2, 3, figsize = (11,7))
+    fig, ax = pl.subplots(2, 3, figsize = (16, 12))
 
     # Constants
     bar_width = 0.3
@@ -110,12 +110,12 @@ def evaluate(results, accuracy, f1):
     patches = []
     for i, learner in enumerate(results.keys()):
         patches.append(mpatches.Patch(color = colors[i], label = learner))
-    pl.legend(handles = patches, bbox_to_anchor = (-.80, 2.53), \
+    pl.legend(handles = patches, bbox_to_anchor = (-.80, 2.40), \
                loc = 'upper center', borderaxespad = 0., ncol = 3, fontsize = 'x-large')
     
     # Aesthetics
-    pl.suptitle("Performance Metrics for Three Supervised Learning Models", fontsize = 16, y = 1.10)
-    pl.tight_layout()
+    pl.suptitle("Performance Metrics for Three Supervised Learning Models", fontsize = 12, y = 0.99)
+   # pl.tight_layout()
     pl.show()
     
 
