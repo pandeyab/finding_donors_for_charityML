@@ -1,5 +1,5 @@
 
-# Supervised Learning
+# CharityML-Project-DataScientist-ND-Udacity
 ## Project: Finding Donors for CharityML
 
 ### Install
