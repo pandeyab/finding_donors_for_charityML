@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>C:\Users\pandeab\dataScientist_Project\udacity-DSND-git-project\finding_donors_for_charityML\finding_donors</title>
+<title>finding_donors</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13919,46 +13919,45 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <p><strong>Answer: </strong></p>
 <p>I feel following 3 models could be used appropriately for this problem.</p>
 <ol>
-<li><p>Support Vector Machine(SVM):</p>
+<li>Support Vector Machine(SVM):</li>
+</ol>
 <p>SVMs are very particular and flexible algo for both classification and regression</p>
 <p>Real world problem:</p>
-<p>Face Recognition Algorithm where the labeled faces are being used as dataset. Each face image pixel values are used as feature but it gest more effective if there is use of SVM as classifier for pre-processing.</p>
+<p>Face Recognition Algorithm where the labeled faces are being used as dataset. Each face image pixel values are used as         feature but it gest more effective if there is use of SVM as classifier for pre-processing.</p>
 <p>Strength:</p>
 <p>Less dependency on support vectors, due to this it is more compact and memory efficient.
- Prediction phase is faster as compared to other classifiers.
- Work well with n-dim data.</p>
+Prediction phase is faster as compared to other classifiers.
+Work well with n-dim data.</p>
 <p>Weakness:</p>
 <p>If training data is huge, it takes more time to train due to its computaional limitations.
- It needs a better care while softening before cross-validation.
- Sometimes it needs extra estimation via cross-validation because results are not direct probabilisticly estimated.</p>
+It needs a better care while softening before cross-validation.
+Sometimes it needs extra estimation via cross-validation because results are not direct probabilisticly estimated.</p>
 <p>Candidate for this problem:</p>
 <p>since we are dealing with a bigger data set. Sample size is greater (have enough data to train with). Predicting a             categorey (works with classification). Sample size is less than 100k. Works well with large feature sets.</p>
-</li>
-</ol>
 <ol>
-<li><p>Naive Bayes(GaussianNB):</p>
+<li>Naive Bayes(GaussianNB):</li>
+</ol>
 <p>a extremely fast and simple classification algorithm, suitable for very high-dimensional datasets</p>
 <p>Real world problem:</p>
 <p>Text classification with multinomial Naive Bayes where number of words and frequencies need to classified.</p>
 <p>Strength:</p>
 <p>They need very few tunable parameters.
- Preety fast in training and prediction, provide very fast probabilistic prediction</p>
+Preety fast in training and prediction, provide very fast probabilistic prediction</p>
 <p>Weakness:</p>
 <p>One of its weakness is that it needs some correction(statistical analysis) before processing the data to see correlation       degrre between all the features.Since it treats all attributes equally. it tends to select the most uncorrealted 
- attributes.</p>
+attributes.</p>
 <p>Candidate for this problem:
- Since  we have a bigger attributes (103 feature after encoding)</p>
-</li>
-</ol>
+Since  we have a bigger attributes (103 feature after encoding)</p>
 <ol>
-<li><p>Decision Tree Classfier:</p>
+<li>Decision Tree Classfier:</li>
+</ol>
 <p>A very intuitive way to zero in on the classification or labeling objects.</p>
 <p>Real world problem:</p>
-<p>Used for Object Recognition: tree based classification has been used recently for recognizing three dimensional objects and    for high level vision</p>
+<p>Used for Object Recognition: tree based classification has been used recently for recognizing three dimensional objects and     for high level vision</p>
 <p>Strength:</p>
 <p>Because of it tree-based structure and depth &amp; split feature, Decision Tree requires almost no data pre-processing.
 Both training and predictions are very fast.
-It allows the comprehensive analysis of all the possible decision by getting the partition to a deep level and see the          prediction.
+It allows the comprehensive analysis of all the possible decision by getting the partition to a deep level and see the         prediction.
 Even if any data is missing, building Tree won't be affected
 It does not or minimalisticly require scaling of data.</p>
 <p>Weakness:</p>
@@ -13967,9 +13966,7 @@ High bais and variances.
 Unstable
 Doesn't work efficienlty if data are uncorelated.</p>
 <p>Candidate for this problem:</p>
-<p>Since Decision tree requires less data pre-processing and it is also possible to visualize which data would be great for        interpretation. Its faster in prediction.</p>
-</li>
-</ol>
+<p>Since Decision tree requires less data pre-processing and it is also possible to visualize which data would be great for       interpretation. Its faster in prediction.</p>
 
 </div>
 </div>
